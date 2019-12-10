@@ -1,0 +1,8 @@
+<div class="card text-center mb-2" style="width: 18rem;">
+        <img src="https://randomuser.me/api/portraits/men/{{empleado.id}}.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{empleado.nombreCompleto()}}</h5>
+          <p [hidden]="ocultar" class="card-text">{{empleado.departamento}}</p>
+          <a href="#" class="btn btn-primary" (click)="cambiarVisibilidad()">{{ocultar?"ver dateller":"ocultar detalles"}}</a>
+        </div>
+      </div>
